@@ -34,7 +34,7 @@ except ImportError:
 
 callbacks = None
 helpers = None
-NAME = 'EasyCSRF'
+NAME = 'Additional CSRF Checks'
 VERSION = '2.0'
 DEBUG = False
 

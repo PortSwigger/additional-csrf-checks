@@ -1,0 +1,26 @@
+<p>This extension helps find weak CSRF-protection that can be bypassed. For example, content type based protection for API (Rest API, GraphQL API, etc) or 
+CSRF-protection based on obscure data formats (binary format, etc) are known to be weak. Some tricks to bypass CSRF-protection were 
+presented at <a href="https://2017.zeronights.org/report/tricks-bypassing-csrf-protection/">ZeroNights 2017 conference</a>.</p>
+
+<p>The extension is not a scanner. A scanner implementation doesn't allow you to quickly check large WebApp with a mixture of APIs and endpoints for CSRF vulnerabilities. 
+Also a scanner implementation has more false positives/negatives. This extension is a trade-off between manual and fully automatic check.</p>
+
+<p>The extension automatically makes changes to POST/PUT/DELETE/PATCH requests and highlights modified requests in the Proxy HTTP history. To use it, you need to trigger 
+actions in the WebApp, and judge by looking at the WebApp's UI which modified requests have failed or succeeded. Actions that are successful after modification are potentially 
+interesting, and you should investigate them deeper.</p>
+
+<p>With EasyCSRF you can find APIs or endpoints that have weak CSRF-protection based on content type, referrer, obscure data format, etc.</p>
+
+<p>The Settings tab provides the following options:</p>
+
+<ul>
+<li>Enable/disable EasyCSRF extension.</li>
+<li>Modify all or only in-scope requests.</li>
+<li>Remove HTTP headers that are used for CSRF-protection.</li>
+<li>Remove CSRF-token from parameters. URL-encoded, multipart, JSON parameters are supported.</li>
+<li>Change PUT/DELETE/PATCH method to POST.</li>
+<li>Convert URL-encoded body to JSON format.</li>
+<li>Set text/plain value for Content-Type header.</li>
+<li>Change POST/PUT/DELETE/PATCH request to GET request for url-encoded requests.</li>
+</ul>
+

@@ -1,0 +1,12 @@
+Uuid: 2d12070c90cb4a0f91cde0b8927fd606
+ExtensionType: 2
+Name: Additional CSRF Checks
+RepoName: additional-csrf-checks
+ScreenVersion: 2.0
+SerialVersion: 0
+MinPlatformVersion: 0
+ProOnly: False
+Author: Mikhail Egorov
+ShortDescription: Performs additional checks for CSRF vulnerabilities in a semi-automated manner.
+EntryPoint: EasyCSRF.py
+BuildCommand: 
