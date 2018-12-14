@@ -9,6 +9,8 @@ Also a scanner implementation has more false positives/negatives. This extension
 actions in the WebApp, and judge by looking at the WebApp's UI which modified requests have failed or succeeded. Actions that are successful after modification are potentially 
 interesting, and you should investigate them deeper.</p>
 
+<p>Because the extension makes quite aggressive modifications to requests, it is disbaled by default. Enable it when you want to perform CSRF checks.</p>
+
 <p>With EasyCSRF you can find APIs or endpoints that have weak CSRF-protection based on content type, referrer, obscure data format, etc.</p>
 
 <p>The Settings tab provides the following options:</p>

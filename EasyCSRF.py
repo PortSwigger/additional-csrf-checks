@@ -38,7 +38,7 @@ NAME = 'Additional CSRF Checks'
 VERSION = '2.0'
 DEBUG = False
 
-extension_enable = True
+extension_enable = False
 in_scope_only = True
 remove_csrf_headers = True
 remove_csrf_params = True
